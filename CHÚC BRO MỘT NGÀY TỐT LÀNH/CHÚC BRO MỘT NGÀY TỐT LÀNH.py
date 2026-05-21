@@ -1,0 +1,1 @@
+print("chúc ai xem được bài của mình một ngày tốt lành, đừng copy code nha bro bỏ đi nhá")
