@@ -1,1 +1,0 @@
-a=int(input('a='))\nb=int(input('b='))\nminb=min(int(x) for x in str(b))\nprint(f'chu so nho nhat cua b={minb}', '->', a%minb==0)\nm=int(input('m='))\nn=int(input('n='))\ns=a+n\nprint('tong=',s,'chu so lon nhat=',max(int(x) for x in str(s)))
