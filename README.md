@@ -1,2 +1,6 @@
 # 2321030183
-agit 
+mở terminal
+git add
+git commit -m
+git pull
+git push 
