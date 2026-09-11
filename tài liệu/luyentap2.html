@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HUMG</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+        /* Menu trên */
+        
+        .menu {
+            background: #2fa4e7;
+        }
+        
+        .danh-sach {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+        
+        .muc {
+            padding: 15px;
+        }
+        
+        .a {
+            color: white;
+            text-decoration: none;
+        }
+        /* Nội dung */
+        
+        main {
+            display: flex;
+        }
+        
+        .khoi-trai {
+            width: 18%;
+            min-height: 1000px;
+            border-right: 1px solid #ddd;
+        }
+        
+        .dang-nhap {
+            padding: 10px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background: #eaf2fc;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 8px;
+            border: none;
+            border-radius: 6px;
+            background: #2fa4e7;
+            color: white;
+        }
+        
+        .quen {
+            display: block;
+            text-align: right;
+            margin-bottom: 10px;
+            color: #2fa4e7;
+        }
+        
+        .menu-trai a {
+            display: block;
+            padding: 12px 5px;
+            color: #2fa4e7;
+            border-bottom: 1px solid #ddd;
+            text-decoration: none;
+        }
+        
+        .khoi-phai {
+            width: 82%;
+            padding: 15px;
+        }
+        
+        .khung {
+            border: 1px solid #2fa4e7;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="menu">
+        <ul class="danh-sach">
+            <li class="muc"><a class="a" href="#">Thực tập, Đồ án</a></li>
+            <li class="muc"><a class="a" href="#">Thủ tục Một Cửa</a></li>
+            <li class="muc"><a class="a" href="#">Một Cửa online</a></li>
+            <li class="muc"><a class="a" href="#">E-mail HUMG</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="khoi-trai">
+
+            <div class="dang-nhap">
+                <form>
+
+                    <label>Tài khoản</label>
+                    <input type="text" placeholder="Tài khoản">
+
+                    <label>Mật khẩu</label>
+                    <input type="password" placeholder="Mật khẩu">
+
+                    <a class="quen" href="#">Quên mật khẩu?</a>
+
+                    <button>Đăng nhập</button>
+                    <button>Đăng nhập với Microsoft Office 365</button>
+
+                </form>
+            </div>
+
+            <div class="menu-trai">
+                <a href="#">⌂ Trang chủ</a>
+                <a href="#">Khảo sát đánh giá</a>
+            </div>
+
+        </div>
+
+        <div class="khoi-phai">
+
+            <div class="khung">
+                <h3>📢 Tin tức</h3>
+                <p>Về việc đăng ký khối lượng học tập học kỳ phụ</p>
+                <p>Về việc nghỉ học</p>
+            </div>
+
+            <div class="khung">
+                <h3>📢 Thông báo</h3>
+                <p>Thông báo về việc thực tập tốt nghiệp</p>
+                <p>Về việc đăng ký khối lượng học tập</p>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
