@@ -1,0 +1,52 @@
+body {
+    font-family: Arial;
+    margin: 20px;
+}
+
+h2 {
+    color: #168fd5;
+}
+
+select {
+    width: 500px;
+    padding: 8px;
+}
+
+button {
+    padding: 8px 20px;
+    margin-left: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    height: 55px;
+    text-align: center;
+}
+
+th {
+    background-color: #eee;
+    height: 45px;
+}
+
+td:first-child {
+    width: 60px;
+    background-color: #168fd5;
+    color: white;
+}
+
+.mon {
+    background-color: #c9ddfa;
+    color: #111;
+    font-size: 13px;
+}
+
+.mon b {
+    color: #075b9e;
+}

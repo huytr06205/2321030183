@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- internal
+     có thể thêm mã nguồn html vào trong js 
+     lưu ý html phải đặt trong cặp dấu-->
+    <script>
+        document.write("<h1>Xin chào</h1>");
+
+        var tensv = "Nguyễn Văn A";
+        var tuoi = 20;
+        document.write("<h1>" + tensv + "</h1>");
+        document.write("<p>Tuổi: " + tuoi + "</p>");
+
+        var so1 = 10;
+        var so2 = 5;
+
+        var tong = so1 + so2;
+        document.write("<p>Tổng: " + tong + "</p>");
+
+        var chialaydu = so1 % so2;
+        document.write("<p>Chia lấy dư: " + chialaydu + "</p>");
+
+        //++
+        document.write("<p>++so1: " + ++so1 + "</p>");
+        //--
+        document.write("<p>--so1: " + --so1 + "</p>");
+        //+=
+        so1 += 5;
+        document.write("<p>so1 += 5: " + so1 + "</p>");
+        //-=
+        so1 -= 3;
+
+        //boolean (true/false)
+        var a = "10";
+        var b = "5.5";
+        var kq = parseInt(a) + parseInt(b);
+        document.write("<p>Kết quả: " + kq + "</p>");
+
+        var kq2 = parseInt(a) + parseFloat(b);
+        document.write("<p>Kết quả 2: " + kq2 + "</p>");
+
+
+        document.write("<br>");
+
+        document.writeln(tensv.indexOf("V"));
+
+
+        //replace (THAY the chuoi)
+        document.write("<br>");
+        document.writeln(tensv.replace("Nguyễn", "Trần"));
+
+        //startsWith( kiemtra chuoi bat dau bang)
+
+        document.write("<br>");
+        document.write(tensv.startsWith("Trần"));
+
+
+
+        //number
+        document.write("<br>");
+        document.write(isNaN("a"));
+
+        //date dinh dang thang/ngay/namp 
+        var homnay = new Date();
+        document.write("<br>");
+        document.write(homnay);
+
+        //lay nam
+        var nam = homnay.getFullYear();
+        document.write("<br>");
+        document.write(nam);
+
+        //lay thang
+        var thang = homnay.getMonth() + 1;
+        document.write("<br>");
+        document.write(thang);
+
+        //lay ngay
+        var ngay = homnay.getDate();
+        document.write("<br>");
+        document.write(ngay);
+
+        //nam sinh
+        var tuoiA = nam - tuoi;
+        document.write("<br>");
+        document.write("Tuổi của bạn là: " + tuoiA);
+        //mang (array)
+        var mangso = [1, 2, 3, 4, 5];
+        document.write("<br>");
+        document.write("Mảng: " + mangso);
+
+        var mangten = ["Nguyễn Văn A", "Trần Thị B", "Lê Văn C"];
+        document.write("<br>");
+        document.write("Mảng tên: " + mangten);
+
+        var mangtonghop = [1, "Nguyễn Văn A", 2, "Trần Thị B", 3, "Lê Văn C"];
+        document.write("<br>");
+        document.write("Mảng tổng hợp: " + mangtonghop);
+
+        document.write("<br>");
+        document.write("Phần tử đầu tiên của mảng: " + mangten[0]);
+        document.write("<br>");
+
+        //concat (nối mảng)
+        var mang1 = [1, 2, 3];
+        var mang2 = [4, 5, 6];
+        var mang3 = mang1.concat(mang2);
+        document.write("Mảng 3: " + mang3);
+
+        //join (nối các phần tử của mảng thành chuỗi)
+        document.write("<br>");
+        document.write("Mảng 3 nối thành chuỗi: " + mang3.join(", "));
+
+        //pop (xóa phần tử cuối cùng của mảng)
+        document.write("<br>");
+        document.write("Mảng 3 sau khi xóa phần tử cuối cùng: " + mang3.pop());
+        document.write("<br>");
+
+        //push (thêm phần tử vào cuối mảng)
+        mang3.push(7);
+        document.write("Mảng 3 sau khi thêm phần tử vào cuối mảng: " + mang3);
+        document.write("<br>");
+
+        //reverse (đảo ngược mảng)
+        mang3.reverse();
+        document.write("Mảng 3 sau khi đảo ngược: " + mang3);
+        document.write("<br>");
+
+        //>
+        //<
+        //>=
+        //<=
+        //==
+        document.write("<br>");
+        var soA = 10;
+        var soB = 20;
+        document.write("So sánh: " + (soA < soB));
+        document.write("<br>");
+        document.write("So sánh: " + (soA > soB));
+        document.write("<br>");
+
+        // && ||
+        // && (và) || (hoặc)
+
+        document.write(soA < soB && soA > 5);
+        document.write("<br>");
+        document.write(soA < soB || soA > 5);
+
+
+        //=== so sanh tuyệt đối (cả giá trị và kiểu dữ liệu)
+        document.write("<br>");
+        var soC = "10";
+        document.write(soA === soC);
+        document.write("<br>");
+
+
+
+        // if else
+
+        var diem = 8;
+        var mucdiem = 4;
+
+        if (diem < mucdiem) {
+            document.write("truot");
+
+        } else {
+            document.write("đậu");
+        }
+
+
+        var diem1 = 8;
+
+        if (diem1 < 4) {
+            document.write("<br>");
+            document.write("F");
+
+        } else if (diem1 == 4) {
+            document.write("<br>");
+            document.write("D");
+        } else if (diem1 < 6) {
+            document.write("<br>");
+            document.write("C");
+        } else if (diem1 < 7.9) {
+            document.write("<br>");
+            document.write("B");
+        } else if (diem1 >= 8) {
+            document.write("<br>");
+            document.write("A");
+        } else {
+            document.write("<br>");
+            document.write("xuất sắc");
+        }
+    </script>
+    <script src="java.js"></script>
+</body>
+
+</html>
