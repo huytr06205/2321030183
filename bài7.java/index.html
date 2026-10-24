@@ -9,7 +9,7 @@
 
 <body>
     <!-- internal
-     có thể thêm mã nguồn html vào trong js 
+     có thể thêm mã nguồn html vào trong js ss
      lưu ý html phải đặt trong cặp dấu-->
     <script>
         document.write("<h1>Xin chào</h1>");
@@ -182,10 +182,10 @@
             document.write("<br>");
             document.write("F");
 
-        } else if (diem1 == 4) {
+        } else if (diem1 == 4 && diem1 < 5) {
             document.write("<br>");
             document.write("D");
-        } else if (diem1 < 6) {
+        } else if (diem1 < 7.9 && diem1 >= 7) {
             document.write("<br>");
             document.write("C");
         } else if (diem1 < 7.9) {
@@ -198,8 +198,73 @@
             document.write("<br>");
             document.write("xuất sắc");
         }
+
+        //object (đối tượng)
+        var sv = {
+            ten: "Nguyễn Văn A",
+            tuoi: 20,
+            diachi: {
+                tp: "Hà Nội",
+                quan: "Đống Đa",
+                phuong: "Phương Liệt"
+            },
+            gioitinh: true,
+        };
+
+        var thongtinphim = {
+            ten: "Avengers: Endgame",
+            theloai: "Action, Adventure, Sci-Fi",
+            thoiluong: 181,
+            ngayphathanh: "26 April 2019",
+            dienvien: ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo", ]
+        }
+
+        document.write("<br>");
+        document.write("Tên phim: " + thongtinphim.dienvien);
+        for (var i = 0; i < thongtinphim.dienvien.length; i++) {
+            document.write("<br>");
+            document.write("Tên diễn viên: " + thongtinphim.dienvien[i]);
+        }
+
+
+        // Mảng thông tin sinh viên
+        var thongtinsv = ["thuy", "tuan", "duong", "kien", "huy"];
+
+        // Vòng lặp for
+        for (var i = 0; i < thongtinsv.length; i++) {
+            if (thongtinsv[i] == "thuy" || thongtinsv[i] == "tuan") {
+                document.write("Xin chào: " + thongtinsv[i] + "<br>");
+            }
+        }
+
+        // Alert: Thông báo
+        alert("Xin chào");
+
+        // Confirm: Xác nhận
+        var xacnhan = confirm("Bạn có muốn tiếp tục không?");
+
+        if (xacnhan == true) {
+            document.write("Bạn đã chọn tiếp tục<br>");
+        } else {
+            document.write("Bạn đã chọn hủy<br>");
+        }
+
+        // Prompt: Nhập dữ liệu
+        var nhapten = prompt("Nhập tên của bạn:");
+
+        document.write("Tên của bạn là: " + nhapten);
+
+
+        //function (hàm)
     </script>
-    <script src="java.js"></script>
+
+</body>
+
+</html>
+
+
+</script>
+<script src="java.js"></script>
 </body>
 
 </html>

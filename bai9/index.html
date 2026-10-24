@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đổi chế độ sáng tối</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="khoi">
+        <h1 id="tieude">Chế độ sáng</h1>
+
+        <img id="anh" src="mattroi.png" alt="Mặt trời">
+
+        <br><br>
+
+        <button onclick="doichedo()">Đổi chế độ</button>
+    </div>
+
+    <script>
+        function doichedo() {
+            var body = document.body;
+            var tieude = document.getElementById("tieude");
+            var anh = document.getElementById("anh");
+
+            if (body.style.backgroundColor == "black") {
+                body.style.backgroundColor = "white";
+                body.style.color = "black";
+                tieude.innerHTML = "Chế độ sáng";
+                anh.src = "mattroi.png";
+            } else {
+                body.style.backgroundColor = "black";
+                body.style.color = "white";
+                tieude.innerHTML = "Chế độ tối";
+                anh.src = "mattrang.png";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

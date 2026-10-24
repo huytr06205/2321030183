@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //function
+        //de tao function dung cu phap
+        //1: ham khong co tham so 
+        //function tenham(){
+
+        function xinchao() {
+            document.write("<h1>Xin chào</h1>");
+        }
+
+        //goi ham 
+        xinchao();
+
+
+        //2: ham co tham so
+        //function tenham(thamso1, thamso2){
+        function xinchao2(ten, tuoi) {
+            document.write("<h1>tuất  " + ten + " " + tuoi + "  </h1>");
+        }
+        //goi ham
+        xinchao2("trọng", 20);
+        xinchao2("kiên", 22);
+        xinchao2("việt", 19);
+
+
+        // tạo hàm để tính chu vi hình chữ nhật 
+        function CVHCN(chieuDai, chieuRong) {
+            var chuVi = 2 * (chieuDai + chieuRong);
+            return chuVi;
+        }
+
+        // gọi hàm
+        document.write("<h1>Chu vi hình chữ nhật: " + CVHCN(10, 4) + "</h1>");
+
+
+        // vong lap for in ra xin chao tung ten trong mang 
+        function xinchao3(ten) {
+            document.write("<h1>Xin chào " + ten + "</h1>");
+        }
+        var dssv = ["A", "B", "C", "D", "E"];
+        for (var i = 0; i < dssv.length; i++) {
+            xinchao3(dssv[i]);
+        }
+
+
+
+
+        // in ra danh sách sinh vien ngoai tru "viet"
+        var dssv2 = ["viet", "trong", "kien", "hieu", "thanh"];
+        for (var i = 0; i < dssv2.length; i++) {
+            if (dssv2[i] !== "viet") {
+                xinchao3(dssv2[i]);
+            }
+        }
+
+
+        // danh sách sinh viên,tên sinh viên cần tìm 
+        // đầu ra : nếu có thì in ra "có sinh viên" nếu không in ra "không có sinh viên"
+
+
+        var dssv3 = ["viet", "trong", "kien", "hieu", "thanh"];
+
+        function timsv(ten) {
+            for (var i = 0; i < dssv3.length; i++) {
+                if (dssv3[i] == ten) {
+                    return true;
+                }
+            }
+            return false;
+        }
+        if (timsv("viet")) {
+            document.write("<h1>Có sinh viên</h1>");
+        } else {
+            document.write("<h1>Không có sinh viên</h1>");
+        }
+    </script>
+</body>
+
+</html>

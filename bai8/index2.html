@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!DOCTYPE html>
+    <html lang="vi">
+
+    <body>
+
+        <!-- Nhập số tính tổng -->
+        <div>
+            Nhập số thứ 1: <input type="number" id="s1">
+        </div>
+
+        <div>
+            Nhập số thứ 2: <input type="number" id="s2">
+        </div>
+
+        <div>
+            <button onclick="tinhtong()">Tính tổng</button>
+        </div>
+
+        <div>
+            Kết quả: <input type="number" id="ketqua">
+        </div>
+
+        <script>
+            function tinhtong() {
+                var s1 = parseFloat(document.getElementById("s1").value);
+                var s2 = parseFloat(document.getElementById("s2").value)
+
+                var tong = s1 + s2;
+
+                document.getElementById("ketqua").value = tong;
+            }
+        </script>
+
+    </body>
+
+
+    </html>
